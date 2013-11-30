@@ -1,0 +1,25 @@
+package com.company;
+
+import org.junit.Test;
+import static junit.framework.Assert.*;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class MainTest {
+    @Test
+    public void testMain1()throws Exception{
+        Main main = new Main() ;
+        int    n = main.eval("((20+5)*5)")   ;
+        assertEquals (125,n);
+    }
+    @Test
+    public void testMain2()throws Exception{
+        Main main = new Main() ;
+        int    n = main.eval("5+4*5")   ;
+        assertEquals (25,n);
+    }
+
+}
+
+
